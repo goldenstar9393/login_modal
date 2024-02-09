@@ -1,0 +1,121 @@
+/* Customize modal dimensions and position */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.font-family-Poppins {
+    font-family: 'Poppins';
+}
+
+.custom-modal {
+    /* min-width: 360px; */
+    width: 360px;
+    /* height: 694px; */
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #1A1A1A;
+}
+
+@media (max-width:360px) {
+    .custom-modal {
+        width: 100%;
+    }
+}
+
+.custom-close {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    top: 16px;
+    left: 320px;
+    flex-shrink: 0;
+}
+
+.no-wrap-text {
+    white-space: nowrap;
+}
+
+.login-color {
+    background-color: #D51616;
+}
+
+.login-color:hover {
+    background-color: rgb(180, 79, 79);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+    float: right !important;
+}
+
+.fs-12 {
+    font-size: 12px !important;
+}
+
+.fs-14 {
+    font-size: 14px !important;
+}
+
+.custom-modal-footer {
+    background-color: #202020 !important;
+}
+
+.login-input {
+    background-color: transparent !important;
+    border: 1px solid white !important;
+    color: white !important;
+    padding: 8px 16px;
+}
+
+.login-input::placeholder {
+    color: white !important;
+}
+
+.input-with-image {
+    position: relative;
+}
+
+.input-with-image input {
+    padding-right: 25px;
+    /* Adjust the padding to leave space for the background image */
+}
+
+.input-email::before {
+    content: "";
+    background-image: url('images/mail-send-fill.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 24px 24px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+}
+
+.input-password::before {
+    content: "";
+    background-image: url('images/lock-password-fill.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 24px 24px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+}
+
+
+/* Additional styling */
+
+body {
+    background: #f8f9fa;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
